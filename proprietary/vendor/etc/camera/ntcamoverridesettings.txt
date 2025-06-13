@@ -1,0 +1,9 @@
+MaxRequestQueueDepth=2
+NumberOfThread=1
+LogInfoMask=0x21
+LivePendingRequestTimeOut=30000
+EnableReuqestLIFO=1
+SelectNightSceneType=1
+MaxMemPoolTotalBufferNumber=100
+MaxRequestQueueDepthForBokeh=1
+DelayedTriggerOfAbort=1
