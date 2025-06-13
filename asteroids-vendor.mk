@@ -907,7 +907,6 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libcommonchiutils \
     libconfigdb \
-    libcpion \
     libdataitems \
     libdiag \
     libdigital-dimming \
@@ -1037,7 +1036,6 @@ PRODUCT_PACKAGES += \
     libntcamyuv \
     libntf \
     libntofflinepostproc \
-    liboemcrypto \
     liboffscreenpoweroptfeature \
     libopencv \
     libopencv3a \
@@ -1186,7 +1184,6 @@ PRODUCT_PACKAGES += \
     libtlpd_crypto \
     libtlpd_internal \
     libtlpd_logger \
-    libtrustedapploader \
     libubifocus \
     libubwcp \
     libvega_common \

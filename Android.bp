@@ -11314,33 +11314,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcpion",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcpion.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdmabufheap",
-                "libvmmem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdataitems",
     owner: "nothing",
     strip: {
@@ -15341,41 +15314,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libcamera_metadata",
                 "libntcamcommonutils",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "liboemcrypto",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/liboemcrypto.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libQSEEComAPI",
-                "libcpion",
-                "libminkdescriptor",
-                "libcutils",
-                "libtrustedapploader",
-                "vendor.qti.hardware.display.config-V7-ndk",
-                "libpower",
-                "libcrypto",
-                "libbinder_ndk",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -19877,34 +19815,6 @@ cc_prebuilt_library_shared {
                 "libdiag",
                 "liblog",
                 "libtlpd_crypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtrustedapploader",
-    owner: "nothing",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtrustedapploader.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libminkdescriptor",
-                "libminksocket_vendor",
-                "libqcbor",
                 "libc++",
                 "libc",
                 "libm",
