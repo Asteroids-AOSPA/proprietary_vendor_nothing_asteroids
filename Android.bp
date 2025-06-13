@@ -27734,59 +27734,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "diag_mdlog",
-    owner: "nothing",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/diag_mdlog",
-            ],
-            shared_libs: [
-                "libdiag",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "diagcommd",
-    owner: "nothing",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/diagcommd",
-            ],
-            shared_libs: [
-                "liblog",
-                "libdiag",
-                "libminkdescriptor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "dlsc",
     owner: "nothing",
     target: {

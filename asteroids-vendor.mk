@@ -223,7 +223,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
-    vendor/nothing/asteroids/proprietary/vendor/etc/init/diagcommd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/diagcommd.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/dlsc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlsc.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
@@ -1526,8 +1525,6 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     diag-router \
-    diag_mdlog \
-    diagcommd \
     dlsc \
     dpmQmiMgr \
     dspservice \
