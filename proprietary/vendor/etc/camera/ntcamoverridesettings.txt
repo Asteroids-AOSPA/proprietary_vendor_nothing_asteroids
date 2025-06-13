@@ -7,3 +7,4 @@ SelectNightSceneType=1
 MaxMemPoolTotalBufferNumber=100
 MaxRequestQueueDepthForBokeh=1
 DelayedTriggerOfAbort=1
+EnableCopyOnNodeFailedMask=0x204400000
