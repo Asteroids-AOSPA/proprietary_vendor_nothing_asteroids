@@ -1427,6 +1427,7 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     uimremoteclient \
     uimremoteserver \
+    EuiccGoogle \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     QCC \
