@@ -1431,11 +1431,13 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     QCC \
     QtiTelephonyService \
+    QtiTelephony \
     WfdService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
+    nt-telephony-interface \
     uimgbalibrary \
     uimgbamanagerlibrary \
     uimremoteclientlibrary \
