@@ -1435,6 +1435,7 @@ PRODUCT_PACKAGES += \
     EuiccGoogle \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
+    WfcActivation \
     QCC \
     QtiTelephonyService \
     MyVerizonServices \
