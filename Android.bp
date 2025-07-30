@@ -8493,7 +8493,6 @@ cc_prebuilt_library_shared {
                 "libgsl",
                 "libutils",
                 "libadreno_utils",
-                "libadreno_app_profiles",
                 "libnativewindow",
                 "libvndksupport",
                 "libgralloc.qti",
@@ -8772,6 +8771,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libOpenCL.so",
             ],
             shared_libs: [
+                "liblog",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
