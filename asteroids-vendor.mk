@@ -1617,7 +1617,6 @@ PRODUCT_PACKAGES += \
     ssr_diag \
     ssr_setup \
     subsystem_ramdump \
-    system_dlkm_modprobe \
     tftp_server \
     thermal-engine-v2 \
     time_daemon \
