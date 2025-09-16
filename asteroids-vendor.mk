@@ -341,8 +341,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/media_codecs_volcano_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_volcano_v1.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v1_Base.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v1_Base.xml \
-    vendor/nothing/asteroids/proprietary/vendor/etc/media_profiles_volcano_v1_Pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_volcano_v1_Pro.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/media_volcano_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_volcano_v1/video_system_specs.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/nothing/asteroids/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
