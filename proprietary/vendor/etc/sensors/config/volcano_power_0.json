@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "IDP", "IDPS", "Surf", "RCM", "QRD", "HDK"],
-    "soc_id": ["641", "640", "636", "657", "658"]
+    "soc_id": ["641", "640", "636", "657", "658","712"]
   },
   "power":{
     "owner": "power_manager",

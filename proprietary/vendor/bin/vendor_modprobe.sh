@@ -1,6 +1,6 @@
 #! /vendor/bin/sh
 #=============================================================================
-# Copyright (c) 2019-2022 Qualcomm Technologies, Inc.
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #=============================================================================
@@ -23,6 +23,10 @@ do
 	if [ "$audio_arch" == "audioreach" ]; then
 		if [ -e ${dir}/modules.audio.ar.blocklist ]; then
 			audio_blocklist_expr="$(sed -n -e 's/blocklist \(.*\)/\1/p' ${dir}/modules.audio.ar.blocklist | sed -e 's/-/_/g' -e 's/^/-e /')"
+		fi
+	elif [ "$audio_arch" == "audiolite" ]; then
+		if [ -e ${dir}/modules.audio.audiolite.blocklist ]; then
+			audio_blocklist_expr="$(sed -n -e 's/blocklist \(.*\)/\1/p' ${dir}/modules.audio.audiolite.blocklist | sed -e 's/-/_/g' -e 's/^/-e /')"
 		fi
 	else
 		if [ -e ${dir}/modules.audio.legacy.blocklist ]; then

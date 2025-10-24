@@ -64,6 +64,12 @@ case "$variant" in
 	"4_3_0")
 	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-volcano_4_3_0.sh
 	;;
+	"3_3_1")
+        /vendor/bin/sh /vendor/bin/init.kernel.post_boot-volcano_3_3_1.sh
+        ;;
+	"4_2_1")
+        /vendor/bin/sh /vendor/bin/init.kernel.post_boot-volcano_4_2_1.sh
+        ;;
 	*)
 	echo "***WARNING***: Postboot script not present for the variant ${variant}"
 	fallback_setting

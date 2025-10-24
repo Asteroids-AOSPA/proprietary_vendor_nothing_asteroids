@@ -6,7 +6,7 @@
   "qsh_ble_config":{
     "owner": "qsh_ble",
     "uart_instance":{ "type": "int", "ver": "0",
-        "data": "6"
+        "data": "7"
     }
   }
 }

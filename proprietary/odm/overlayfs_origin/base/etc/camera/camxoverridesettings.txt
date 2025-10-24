@@ -70,3 +70,6 @@ FDProcessingControl=AppRequest
 disablePreProcessedOutputPorts=FALSE
 overrideScaleLimit=2
 
+# enable motion vector
+enableMotionAssisted3A=1
+disableASDStatsProcessing=0

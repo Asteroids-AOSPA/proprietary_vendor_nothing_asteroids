@@ -55,7 +55,7 @@ case "$target" in
     "pineapple")
         setprop vendor.mm.target.enable.qcom_parser 0
         case "$soc_hwid" in
-            614|632|642|643)
+            614|632|642|643|700)
                 setprop vendor.media.target_variant "_cliffs_v0"
                 if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q8635-38577-1"
@@ -111,7 +111,7 @@ case "$target" in
     "volcano")
         setprop vendor.mm.target.enable.qcom_parser 16694015
         case "$soc_hwid" in
-            636|640|641|657|658)
+            636|640|641|712)
                 #xiao.wu@media.video,2024/11/19,set netflix prop on all Android versions
                 #if [ $build_codename -le "14" ]; then
                     setprop vendor.netflix.bsp_rev "Q7635-39449-1"
@@ -120,6 +120,35 @@ case "$target" in
                 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
                 if [ $sku_ver -eq 1 ]; then
                     setprop vendor.media.target_variant "_volcano_v1"
+                fi
+                ;;
+            657|658)
+                if [ $build_codename -le "14" ]; then
+                    setprop vendor.netflix.bsp_rev "Q7635-39449-1"
+                fi
+                setprop vendor.media.target_variant "_volcano_v0"
+                sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
+                if [ $sku_ver -eq 1 ] || [ $sku_ver -eq 3 ]; then
+                    setprop vendor.media.target_variant "_volcano_v1"
+                elif [ $sku_ver -eq 2 ]; then
+                    setprop vendor.media.target_variant "_volcano_v2"
+                elif [ $sku_ver -eq 4 ]; then
+                    setprop vendor.media.target_variant "_volcano_v3"
+                fi
+                egl_vendor=`getprop ro.hardware.egl`
+                if [[ "$egl_vendor" != "adreno" ]]; then
+                    soc_subset_parts=0
+                    if [ -f /sys/devices/soc0/subset_parts ]; then
+                        soc_subset_parts=`cat /sys/devices/soc0/subset_parts` 2> /dev/null
+                    fi
+
+                    #GPU - bit 1
+                    gpu_mask=0x00000002
+                    is_no_gpu=$(( gpu_mask&soc_subset_parts ))
+
+                    if [ $is_no_gpu -eq 2 ]; then
+                        setprop vendor.media.target_variant "_volcano_qv0"
+                    fi
                 fi
                 ;;
         esac

@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "IDP", "IDPS", "RCM", "HDK", "Surf"],
-    "soc_id": ["641", "640", "636", "657", "658"]
+    "soc_id": ["641", "640", "636", "657", "658","712"]
   },
   "mmc56x3x_0":{
     "owner": "sns_mmc56x3x",

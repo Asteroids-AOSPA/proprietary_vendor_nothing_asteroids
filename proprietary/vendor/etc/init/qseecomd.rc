@@ -5,6 +5,10 @@
 on init
     start vendor.qseecomd
 
+on property:vendor.qseecomd.hibernate=true
+   stop vendor.qseecomd
+   start vendor.qseecomd
+
 service vendor.qseecomd /vendor/bin/qseecomd
     socket notify-topology stream 660 system drmrpc
     class core

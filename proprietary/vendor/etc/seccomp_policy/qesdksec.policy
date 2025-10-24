@@ -71,3 +71,4 @@ getgid: 1
 
 #added for set thread pool
 setpriority: 1
+dup: 1

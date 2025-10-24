@@ -75,3 +75,6 @@ FDProcessingControl=AppRequest
 #chiLogInfoMask=0xE0
 overrideScaleLimit=2
 
+# enable motion vector
+enableMotionAssisted3A=1
+disableASDStatsProcessing=0

@@ -10,6 +10,7 @@ on early-boot
 
 service wifi_qos_daemon /vendor/bin/wifi_qos_daemon
     class late_start
-    user system
-    group system inet net_admin wifi
+    user wifi
+    group wifi inet net_admin oem_2912 system
     capabilities NET_ADMIN
+    oneshot

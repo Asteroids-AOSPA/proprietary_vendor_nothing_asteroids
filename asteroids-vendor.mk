@@ -84,6 +84,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/bokeh_caldata_tele_golden_Pro.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokeh_caldata_tele_golden_Pro.bin \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/bokeh_caldata_uw_golden.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokeh_caldata_uw_golden.bin \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/bokeh_caldata_uw_golden_Pro.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/bokeh_caldata_uw_golden_Pro.bin \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/decision.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/decision.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/decision_pro.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/decision_pro.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/facedetect/VegaDetect.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facedetect/VegaDetect.model \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/facesr.model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facesr.model \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/aifeiertieta/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/aifeiertieta/config.json \
@@ -99,6 +101,13 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/boli/hsl.vert:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/boli/hsl.vert \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/boli/len.frag:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/boli/len.frag \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/boli/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/boli/params.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilin/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilin/config.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilin/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilin/content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilin/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilin/effect_content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilin/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilin/filter.png \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilin/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilin/filter_effect3.fs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilin/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilin/filter_effect3.vs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilin/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilin/params.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilinheibai/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilinheibai/config.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilinheibai/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilinheibai/content.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/feilinheibai/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/feilinheibai/effect_content.json \
@@ -113,6 +122,27 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupian/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupian/filter_effect3.fs \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupian/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupian/filter_effect3.vs \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupian/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupian/params.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupianV2/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupianV2/config.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupianV2/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupianV2/content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupianV2/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupianV2/effect_content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupianV2/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupianV2/filter.png \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupianV2/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupianV2/filter_effect3.fs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupianV2/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupianV2/filter_effect3.vs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/fupianV2/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/fupianV2/params.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/heibaidianying/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/heibaidianying/config.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/heibaidianying/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/heibaidianying/content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/heibaidianying/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/heibaidianying/effect_content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/heibaidianying/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/heibaidianying/filter.png \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/heibaidianying/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/heibaidianying/filter_effect3.fs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/heibaidianying/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/heibaidianying/filter_effect3.vs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/heibaidianying/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/heibaidianying/params.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/lengdiao/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/lengdiao/config.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/lengdiao/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/lengdiao/content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/lengdiao/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/lengdiao/effect_content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/lengdiao/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/lengdiao/filter.png \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/lengdiao/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/lengdiao/filter_effect3.fs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/lengdiao/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/lengdiao/filter_effect3.vs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/lengdiao/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/lengdiao/params.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/meishi/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/meishi/config.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/meishi/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/meishi/content.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/meishi/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/meishi/effect_content.json \
@@ -127,6 +157,13 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/nuandiao/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/nuandiao/filter_effect3.fs \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/nuandiao/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/nuandiao/filter_effect3.vs \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/nuandiao/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/nuandiao/params.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/stretch/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/stretch/config.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/stretch/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/stretch/content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/stretch/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/stretch/effect_content.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/stretch/filter.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/stretch/filter.png \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/stretch/filter_effect3.fs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/stretch/filter_effect3.fs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/stretch/filter_effect3.vs:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/stretch/filter_effect3.vs \
+    vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/stretch/params.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/stretch/params.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/yinyan/config.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/yinyan/config.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/yinyan/content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/yinyan/content.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/camera/filter/yinyan/effect_content.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/filter/yinyan/effect_content.json \
@@ -240,6 +277,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qlm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qlm-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
+    vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.graphics.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.graphics.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
@@ -413,6 +451,13 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/milos_qsh_ble_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/milos_qsh_ble_0.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qrd_hx32062secr_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qrd_hx32062secr_0.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qrd_icm536xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qrd_icm536xx_0.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qrd_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qrd_lsm6dsv_0.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qrd_ltr567_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qrd_ltr567_0.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qrd_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qrd_mmc56x3x_0.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qrd_och191x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qrd_och191x_0.json \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qrd_ois_manager.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qrd_ois_manager.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
@@ -471,8 +516,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_power_0.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_qrd_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_qrd_icm4x6xx_0.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_qrd_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_qrd_lsm6dso_0.json \
-    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_qrd_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_qrd_lsm6dsv_0.json \
-    vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_qrd_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_qrd_mmc56x3x_0.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_qrd_ois_manager_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_qrd_ois_manager_0.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_qrd_stk3a5x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_qrd_stk3a5x_0.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_qrd_tmd2755_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_qrd_tmd2755_0.json \
@@ -626,6 +669,7 @@ PRODUCT_PACKAGES += \
     com.qti.hwcfg.bps \
     com.qti.hwcfg.ife \
     com.qti.hwcfg.ipe \
+    com.qti.hwcfg.tfe \
     com.qti.node.afbfusion \
     com.qti.node.customhwnode \
     com.qti.node.depth \
@@ -1045,8 +1089,9 @@ PRODUCT_PACKAGES += \
     libntcamselector \
     libntcamskia \
     libntcamthread \
+    libntcamultrahdr \
     libntcamyuv \
-    libntf \
+    libntf_vendor \
     libntofflinepostproc \
     liboffscreenpoweroptfeature \
     libopencv \
@@ -1332,12 +1377,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.atfwd-V1-ndk \
     vendor.qti.hardware.radio.common-V1-ndk \
-    vendor.qti.hardware.radio.ims-V15-ndk \
+    vendor.qti.hardware.radio.ims-V16-ndk \
     vendor.qti.hardware.radio.internal.deviceinfo-V1-ndk \
     vendor.qti.hardware.radio.lpa-V1-ndk \
     vendor.qti.hardware.radio.qcrilhook-V1-ndk \
     vendor.qti.hardware.radio.qtiradio-V11-ndk \
-    vendor.qti.hardware.radio.qtiradioconfig-V4-ndk \
+    vendor.qti.hardware.radio.qtiradioconfig-V6-ndk \
     vendor.qti.hardware.radio.uim-V1-ndk \
     vendor.qti.hardware.radio.uim_remote_client-V1-ndk \
     vendor.qti.hardware.radio.uim_remote_server-V1-ndk \
@@ -1387,6 +1432,7 @@ PRODUCT_PACKAGES += \
     lib-imsvtextutils \
     lib-imsvtutils \
     libdiag_system \
+    libdiagatbparser_system \
     libdpmctmgr \
     libdpmfdmgr \
     libdpmframework \
@@ -1398,6 +1444,7 @@ PRODUCT_PACKAGES += \
     libmmparser_lite \
     libmmrtpdecoder \
     libmmrtpencoder \
+    libntf \
     libqcc \
     libqcc_file_agent_sys \
     libqccdme \
@@ -1420,6 +1467,7 @@ PRODUCT_PACKAGES += \
     libwfduibcsrc \
     libwfduibcsrcinterface \
     vendor.qti.ImsRtpService-V1-ndk \
+    vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
     vendor.qti.hardware.dpmservice@1.0 \
@@ -1603,6 +1651,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot \
     init.qcom.sensors \
     init.qti.display_boot \
+    init.qti.graphics \
     init.qti.kernel \
     init.qti.media \
     init.qti.qcv \
@@ -1664,6 +1713,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
     system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    system_ext_priv-app_qcrilmsgtunnel_lib_arm64_libntf_so \
     system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
     vendor_firmware_wlan_qca_cld_qca6750_WCNSS_qcom_cfg_ini \
     vendor_lib64_libEGL_adreno_so \

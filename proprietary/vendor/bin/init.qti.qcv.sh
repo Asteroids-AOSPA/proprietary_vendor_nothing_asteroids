@@ -12,7 +12,7 @@ setprop ro.vendor.qti.soc_id $soc_id
 
 # For chipsets in QCV family, convert soc_id to soc_name
 # and store it in ro.vendor.qti.soc_name.
-if [ "$soc_id" -eq 636 ]; then
+if [ "$soc_id" -eq 636 ] || [ "$soc_id" -eq 712 ]; then
     setprop ro.vendor.qti.soc_name volcano
     setprop ro.vendor.qti.soc_model SM7635
 elif [ "$soc_id" -eq 640 ]; then
@@ -57,6 +57,10 @@ elif [ "$soc_id" -eq 682 ]; then
     setprop ro.vendor.qti.soc_name pineapple
     setprop ro.vendor.qti.soc_model SG8350P
     setprop ro.vendor.media_performance_class 34
+elif [ "$soc_id" -eq 696 ]; then
+    setprop ro.vendor.qti.soc_name pineapple
+    setprop ro.vendor.qti.soc_model SM8650Q
+    setprop ro.vendor.media_performance_class 34
 elif [ "$soc_id" -eq 632 ]; then
     setprop ro.vendor.qti.soc_name cliffs
     setprop ro.vendor.qti.soc_model SM7675
@@ -64,6 +68,9 @@ elif [ "$soc_id" -eq 614 ]; then
     setprop ro.vendor.qti.soc_name cliffs
     setprop ro.vendor.qti.soc_model SM8635
     setprop ro.vendor.media_performance_class 34
+elif [ "$soc_id" -eq 700 ]; then
+    setprop ro.vendor.qti.soc_name cliffs
+    setprop ro.vendor.qti.soc_model SG6275P
 elif [ "$soc_id" -eq 642 ]; then
     setprop ro.vendor.qti.soc_name cliffs
     setprop ro.vendor.qti.soc_model SM8635P
@@ -117,4 +124,18 @@ elif [ "$soc_id" -eq 475 ] || [ "$soc_id" -eq 499 ] || [ "$soc_id" -eq 497 ] ||
      [ "$soc_id" -eq 498 ] || [ "$soc_id" -eq 515 ]; then
     setprop ro.vendor.qti.soc_name yupik
     setprop ro.vendor.qti.soc_model SM7325
+elif [ "$soc_id" -eq 645 ]; then
+    setprop ro.vendor.qti.soc_name pineapple
+    setprop ro.vendor.qti.soc_model QCM8650
+    setprop ro.vendor.media_performance_class 34
+elif [ "$soc_id" -eq 646 ] || [ "$soc_id" -eq 702 ]; then
+    setprop ro.vendor.qti.soc_name pineapple
+    setprop ro.vendor.qti.soc_model QCS8625
+    setprop ro.vendor.media_performance_class 34
+elif [ "$soc_id" -eq 673 ]; then
+    setprop ro.vendor.qti.soc_name seraph
+    setprop ro.vendor.qti.soc_model SAR2230P
+elif [ "$soc_id" -eq 672 ]; then
+    setprop ro.vendor.qti.soc_name seraph
+    setprop ro.vendor.qti.soc_model SAR1250P
 fi
