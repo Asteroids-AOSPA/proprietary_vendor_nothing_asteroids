@@ -29106,6 +29106,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "qspa-nav.xml",
+    owner: "nothing",
+    src: "proprietary/vendor/etc/vintf/manifest/qspa/qspa-nav.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest/qspa",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "qtiradio-saidl.xml",
     owner: "nothing",
     src: "proprietary/vendor/etc/vintf/manifest/qtiradio-saidl.xml",
