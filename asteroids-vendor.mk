@@ -250,6 +250,9 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/display/qdcm_calib_data_rm69220_amoled_vid_mode_dsi_visionox_panel_with_DSC.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_rm69220_amoled_vid_mode_dsi_visionox_panel_with_DSC.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
+    vendor/nothing/asteroids/proprietary/vendor/etc/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/common.cfg \
+    vendor/nothing/asteroids/proprietary/vendor/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfm.cfg \
+    vendor/nothing/asteroids/proprietary/vendor/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfs.cfg \
     vendor/nothing/asteroids/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/nothing/asteroids/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
