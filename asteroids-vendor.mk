@@ -306,6 +306,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
+    vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.noth.hardware.charge-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.charge-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
@@ -1371,6 +1372,7 @@ PRODUCT_PACKAGES += \
     vendor.libdpmframework \
     vendor.libdpmtcm \
     vendor.libmwqemiptablemgr \
+    vendor.noth.hardware.charge-V1-ndk \
     vendor.noth.hardware.sensor.sensor_extension-V1-ndk_platform \
     vendor.qti.ImsRtpService-V1-ndk_vendor \
     vendor.qti.ImsRtpService-aidl-Impl \
@@ -1611,6 +1613,7 @@ PRODUCT_PACKAGES += \
     qms-saidl.xml \
     qspa-nav.xml \
     qtiradio-saidl.xml \
+    vendor.noth.hardware.charge-service.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
     vendor.nothing.hardware.biometrics.fingerprint-service.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
@@ -1665,6 +1668,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     pasrknob \
     qcrilNrd \
+    vendor.noth.hardware.charge-service \
     vendor.noth.hardware.sensor.sensor_extension-service \
     vendor.nothing.hardware.biometrics.fingerprint-service \
     vendor.qti.camera.provider-service_64 \

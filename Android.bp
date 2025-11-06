@@ -23936,6 +23936,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.noth.hardware.charge-V1-ndk",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.noth.hardware.charge-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.noth.hardware.sensor.sensor_extension-V1-ndk_platform",
     owner: "nothing",
     strip: {
@@ -29142,6 +29167,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.noth.hardware.charge-service.xml",
+    owner: "nothing",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.noth.hardware.charge-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.noth.hardware.sensor.sensor_extension-service.xml",
     owner: "nothing",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.noth.hardware.sensor.sensor_extension-service.xml",
@@ -30162,6 +30196,38 @@ cc_prebuilt_binary {
                 "libavservices_minijail",
                 "qcrild_libqcrilnr",
                 "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.noth.hardware.charge-service",
+    owner: "nothing",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.noth.hardware.charge-service",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "libbase",
+                "libbinder_ndk",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "vendor.noth.hardware.charge-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
