@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/nothing/asteroids/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/nothing/asteroids/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
+    vendor/nothing/asteroids/proprietary/system_ext/etc/init/sltntc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/sltntc.rc \
     vendor/nothing/asteroids/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/nothing/asteroids/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/nothing/asteroids/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
@@ -40,6 +41,8 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
     vendor/nothing/asteroids/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/nothing/asteroids/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
+    vendor/nothing/asteroids/proprietary/system_ext/etc/sltntc/sltntc.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sltntc/sltntc.conf \
+    vendor/nothing/asteroids/proprietary/system_ext/etc/sltntc/sltntc_SM7635.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sltntc/sltntc_SM7635.conf \
     vendor/nothing/asteroids/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/nothing/asteroids/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/nothing/asteroids/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
@@ -533,6 +536,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/config/volcano_vertigo_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/volcano_vertigo_mmc56x3x_0.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/nothing/asteroids/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/nothing/asteroids/proprietary/vendor/etc/sltntc/sltntc.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sltntc/sltntc.conf \
     vendor/nothing/asteroids/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/nothing/asteroids/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/nothing/asteroids/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
@@ -1755,6 +1759,7 @@ PRODUCT_PACKAGES += \
     dpmd \
     qccsyshal@1.2-service \
     qccsyshal_aidl-service \
+    sltntc \
     tcmd \
     wfdservice64
 
