@@ -283,7 +283,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.ntf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ntf.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qlm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qlm-service.rc \
-    vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.display_boot.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.graphics.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.graphics.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
@@ -318,9 +317,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.alarm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
-    vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
@@ -838,7 +835,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
     audio.bluetooth_qti.default \
     audio.primary.volcano \
     camera.qcom.milos \
@@ -993,15 +989,12 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdigital-dimming \
     libdisp-aba \
-    libdisplayconfig.qti \
-    libdisplaydebug \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
     libdpps \
     libdrmfs \
     libdrmtime \
-    libdrmutils \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
@@ -1012,7 +1005,6 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
-    libfilefinder \
     libfmpal \
     libgame_enhance \
     libgamepoweroptfeature \
@@ -1022,10 +1014,6 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
-    libgpu_tonemapper \
-    libgralloc.qti \
-    libgralloccore \
-    libgrallocutils \
     libgsl \
     libhdr10plus \
     libhdr_backlight_adapter \
@@ -1034,7 +1022,6 @@ PRODUCT_PACKAGES += \
     libhdrdynamic \
     libhdrdynamicootf \
     libhfp_pal \
-    libhistogram \
     libhme \
     libhotword_intf \
     libiccprofile \
@@ -1192,12 +1179,10 @@ PRODUCT_PACKAGES += \
     libqcrildataaidl \
     libqcrildatactl \
     libqcrildataqos \
-    libqdMetaData \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdi \
     libqdpr \
-    libqdutils \
     libqesdk2_0 \
     libqisl \
     libqll \
@@ -1216,7 +1201,6 @@ PRODUCT_PACKAGES += \
     libqrtrclient \
     libqseed3 \
     libqsegnet \
-    libqservice \
     libqsh \
     libqsh_ble_pb \
     libqshcamera \
@@ -1243,14 +1227,10 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmcore \
-    libsdmdal \
     libsdmextension \
-    libsdmutils \
     libsdsprpc \
     libsensor_extension \
     libsensorslog \
@@ -1592,7 +1572,6 @@ PRODUCT_PACKAGES += \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
-    android.hardware.graphics.mapper-impl-qti-display.xml \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
@@ -1629,8 +1608,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.alarm.xml \
     vendor.qti.hardware.data.connectionaidl.xml \
     vendor.qti.hardware.data.iwlandata.xml \
-    vendor.qti.hardware.display.allocator-service.xml \
-    vendor.qti.hardware.display.demura-service.xml \
     vendor.qti.hardware.embmssl.xml \
     vendor.qti.hardware.lights.service.xml \
     vendor.qti.hardware.limits-service.xml \
@@ -1680,10 +1657,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits@1.2-service \
@@ -1704,7 +1678,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-volcano_default_4_3_1 \
     init.kernel.post_boot \
     init.qcom.sensors \
-    init.qti.display_boot \
     init.qti.graphics \
     init.qti.kernel \
     init.qti.media \
