@@ -310,7 +310,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.sensor.sensor_extension-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nothing.hardware.biometrics.fingerprint-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
-    vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/nothing/asteroids/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
@@ -826,7 +825,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
     audio.bluetooth_qti.default \
-    audio.primary.volcano \
     camera.qcom.milos \
     camera.qcom \
     com.dsi.ant@1.0-impl \
@@ -881,9 +879,6 @@ PRODUCT_PACKAGES += \
     libTxPwrJni \
     libVoiceSdk \
     libWlanServiceJni \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     lib_lvacfs \
     libaacvibrator \
     libadm \
@@ -892,17 +887,8 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
     libaidenoiser \
     libaidenoiserv2 \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
     libarc.ion \
     libarcsoft_ai_moon \
     libarcsoft_aiscenedetection \
@@ -922,14 +908,9 @@ PRODUCT_PACKAGES += \
     libarcsoft_tfe_sn \
     libarcsoft_tfe_sn_front \
     libarcsoft_tfe_super_resolution \
-    libarmemlog \
-    libats \
-    libaudio_log_utils \
-    libaudiochargerlistener \
     libaudiofeaturestats \
     libbacklight-calib \
     libbatching \
-    libbatterylistener \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_aidl_qti \
@@ -971,7 +952,6 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libcommonchiutils \
     libconfigdb \
-    libcustomva_intf \
     libdataitems \
     libdiag \
     libdigital-dimming \
@@ -992,7 +972,6 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfeutils \
-    libfmpal \
     libgame_enhance \
     libgamepoweroptfeature \
     libgeofencing \
@@ -1008,9 +987,7 @@ PRODUCT_PACKAGES += \
     libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
-    libhfp_pal \
     libhme \
-    libhotword_intf \
     libiccprofile \
     libidl \
     libintervmipc \
@@ -1054,8 +1031,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblvacfs_wrapper \
-    liblx-ar_util \
-    liblx-osal \
     libmcs \
     libmctfengine_stub \
     libmdmdetect \
@@ -1108,7 +1083,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient \
     libpasrutils \
     libpdmapper \
     libpdnotifier \
@@ -1208,7 +1182,6 @@ PRODUCT_PACKAGES += \
     libskewknob \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
-    libsndcardparser \
     libsns_direct_channel_stub \
     libsnsapi \
     libsnsdiaglog \
@@ -1313,12 +1286,8 @@ PRODUCT_PACKAGES += \
     libvrt_aide_dsp_skel \
     sensors.qsh \
     libasphere \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libquasar \
     libshoebox \
-    libvolumelistener \
     vendor.hardware.light-V1-ndk_platform \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
@@ -1334,7 +1303,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.gnss-V6-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -1363,7 +1331,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.1 \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.perf2-V1-ndk \
     vendor.qti.hardware.power.powermodule-V1-ndk \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
@@ -1555,7 +1522,6 @@ PRODUCT_PACKAGES += \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
     manifest_identity_credential.xml \
-    manifest_non_qmaa.xml \
     mwqem-saidl.xml \
     qcrilhook-saidl.xml \
     qms-saidl.xml \
@@ -1592,7 +1558,6 @@ PRODUCT_PACKAGES += \
     ATFWD-daemon \
     adpl \
     adsprpcd \
-    audioadsprpcd \
     cdsprpcd \
     cnd \
     cnss-daemon \

@@ -8,7 +8,7 @@ LVACFS_ABSOLUTE_PATH                    // PathDef
 1                                       // NbCalibration360s
 /vendor/etc/lvacfs_params/1mic/LVACFS_Calibration360.dat                            // CalibrationFile0
 8                                       // NbProfile
-5                                       // DeviceId5
+1                                       // DeviceId1
 /vendor/etc/lvacfs_params/1mic/LVIMFS_Parameter_xxxx_ID5_MIC_Normal.txt             // Profile normal
 6                                       // DeviceId6
 /vendor/etc/lvacfs_params/1mic/LVIMFS_Parameter_xxxx_ID6_MIC_App.txt                // Profile
