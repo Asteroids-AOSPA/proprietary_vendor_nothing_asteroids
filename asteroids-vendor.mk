@@ -1190,7 +1190,6 @@ PRODUCT_PACKAGES += \
     libspl \
     libssc_default_listener \
     libssd \
-    libstfactory-vendor \
     libstmobile_effect \
     libswregistrationalgo \
     libsynergy_loc_api \
@@ -1251,7 +1250,6 @@ PRODUCT_PACKAGES += \
     libwqe \
     libxml \
     libxtadapter \
-    nfc_nci.st21nfc.st \
     qcrilInterfaces \
     qcrilIntermodulemsgs \
     qcrilMarshal \
@@ -1575,7 +1573,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service-qti \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.identity-service-qti \
-    android.hardware.nfc-service-st \
     android.hardware.security.keymint-service-qti \
     qcrilNrd \
     vendor.noth.hardware.charge-service \
