@@ -24034,7 +24034,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libQnnHtpV73_so",
+    name: "libQnnHtpV73",
     filename: "libQnnHtpV73.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libQnnHtpV73.so",
@@ -24043,7 +24043,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libQnnHtpV73Skel_so",
+    name: "libQnnHtpV73Skel",
     filename: "libQnnHtpV73Skel.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libQnnHtpV73Skel.so",
@@ -24052,7 +24052,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libadsp_jpege_skel_so",
+    name: "libadsp_jpege_skel",
     filename: "libadsp_jpege_skel.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so",
@@ -24061,7 +24061,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libarc_htp_driver_skel_so",
+    name: "libarc_htp_driver_skel",
     filename: "libarc_htp_driver_skel.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libarc_htp_driver_skel.so",
@@ -24070,7 +24070,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libbitml_nsp_skel_so",
+    name: "libbitml_nsp_skel",
     filename: "libbitml_nsp_skel.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so",
@@ -24079,7 +24079,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libdsp_streamer_binning_so",
+    name: "libdsp_streamer_binning",
     filename: "libdsp_streamer_binning.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libdsp_streamer_binning.so",
@@ -24088,7 +24088,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libhme_dsp_skel_so",
+    name: "libhme_dsp_skel",
     filename: "libhme_dsp_skel.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libhme_dsp_skel.so",
@@ -24097,7 +24097,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libmctfengine_skel_so",
+    name: "libmctfengine_skel",
     filename: "libmctfengine_skel.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libmctfengine_skel.so",
@@ -24106,7 +24106,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so",
+    name: "libmlawbpostproc_dsp_skel",
     filename: "libmlawbpostproc_dsp_skel.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so",
@@ -24115,7 +24115,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libtfadsp_rx_so",
+    name: "libtfadsp_rx",
     filename: "libtfadsp_rx.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libtfadsp_rx.so",
@@ -24124,7 +24124,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "vendor_lib_rfsa_adsp_libtfadsp_tx_so",
+    name: "libtfadsp_tx",
     filename: "libtfadsp_tx.so",
     owner: "nothing",
     src: "proprietary/vendor/lib/rfsa/adsp/libtfadsp_tx.so",
