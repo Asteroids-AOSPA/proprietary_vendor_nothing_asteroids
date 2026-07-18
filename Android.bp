@@ -26067,6 +26067,54 @@ android_app_import {
 }
 
 android_app_import {
+    name: "MobileFeliCaClient",
+    owner: "nothing",
+    apk: "proprietary/product/app/MobileFeliCaClient/MobileFeliCaClient.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "MobileFeliCaMenuMainApp",
+    owner: "nothing",
+    apk: "proprietary/product/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "MobileFeliCaSettingApp",
+    owner: "nothing",
+    apk: "proprietary/product/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
+    name: "MobileFeliCaWebPluginBoot",
+    owner: "nothing",
+    apk: "proprietary/product/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    product_specific: true,
+}
+
+android_app_import {
     name: "VZWAPNLib",
     owner: "nothing",
     apk: "proprietary/product/app/VZWAPNLib/VZWAPNLib.apk",

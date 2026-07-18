@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/product/etc/permissions/com.verizon.apn.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.apn.xml \
     vendor/nothing/asteroids/proprietary/product/etc/permissions/com.verizon.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.verizon.services.xml \
     vendor/nothing/asteroids/proprietary/product/etc/permissions/features-verizon.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/features-verizon.xml \
+    vendor/nothing/asteroids/proprietary/product/etc/sysconfig/felica-allowlist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/felica-allowlist.xml \
     vendor/nothing/asteroids/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_boe.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_boe.bin \
     vendor/nothing/asteroids/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_vxn.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_vxn.bin \
     vendor/nothing/asteroids/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
@@ -1451,6 +1452,10 @@ PRODUCT_PACKAGES += \
     TimeService \
     TrustZoneAccessService \
     TxPwrAdmin \
+    MobileFeliCaClient \
+    MobileFeliCaMenuMainApp \
+    MobileFeliCaSettingApp \
+    MobileFeliCaWebPluginBoot \
     VZWAPNLib \
     uimgbaservice \
     uimremoteclient \
