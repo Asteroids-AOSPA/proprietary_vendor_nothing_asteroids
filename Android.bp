@@ -28346,30 +28346,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.kernel.post_boot-volcano_2_2_1",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-volcano_2_2_1.sh",
-    filename: "init.kernel.post_boot-volcano_2_2_1.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-volcano_3_2_1",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-volcano_3_2_1.sh",
-    filename: "init.kernel.post_boot-volcano_3_2_1.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.kernel.post_boot-volcano_4_3_0",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-volcano_4_3_0.sh",
-    filename: "init.kernel.post_boot-volcano_4_3_0.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.kernel.post_boot-volcano_default_4_3_1",
     owner: "nothing",
     src: "proprietary/vendor/bin/init.kernel.post_boot-volcano_default_4_3_1.sh",

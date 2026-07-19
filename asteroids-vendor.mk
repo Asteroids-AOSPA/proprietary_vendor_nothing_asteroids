@@ -1599,9 +1599,6 @@ PRODUCT_PACKAGES += \
     init.kernel.early_boot-memory \
     init.kernel.post_boot-memory \
     init.kernel.post_boot-volcano \
-    init.kernel.post_boot-volcano_2_2_1 \
-    init.kernel.post_boot-volcano_3_2_1 \
-    init.kernel.post_boot-volcano_4_3_0 \
     init.kernel.post_boot-volcano_default_4_3_1 \
     init.kernel.post_boot \
     init.qcom.sensors \
