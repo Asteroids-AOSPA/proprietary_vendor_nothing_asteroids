@@ -989,6 +989,7 @@ PRODUCT_PACKAGES += \
     libhdrdynamicootf \
     libhme \
     libiccprofile \
+    libics_haptic \
     libidl \
     libintervmipc \
     libipebpsstriping \
