@@ -26442,15 +26442,6 @@ dex_import {
 }
 
 dex_import {
-    name: "qti-telephony-common",
-    owner: "nothing",
-    jars: [
-        "proprietary/system_ext/framework/qti-telephony-common.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
     name: "vendor.qti.ims.connection-V1.0-java",
     owner: "nothing",
     jars: [
