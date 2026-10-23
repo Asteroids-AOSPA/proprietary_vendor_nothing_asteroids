@@ -15,20 +15,11 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/product/etc/sysconfig/felica-allowlist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/felica-allowlist.xml \
     vendor/nothing/asteroids/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_boe.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_boe.bin \
     vendor/nothing/asteroids/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_vxn.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_vxn.bin \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/nothing/asteroids/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/nothing/asteroids/proprietary/system_ext/etc/permissions/advancedSample_camera_extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/advancedSample_camera_extensions.xml \
     vendor/nothing/asteroids/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util_WIDEBAND.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util_WIDEBAND.xml \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/nothing/asteroids/proprietary/system_ext/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vzw_mvs_permissions.xml \
     vendor/nothing/asteroids/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
-    vendor/nothing/asteroids/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/nothing/asteroids/proprietary/system_ext/etc/sltntc/sltntc.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sltntc/sltntc.conf \
     vendor/nothing/asteroids/proprietary/system_ext/etc/sltntc/sltntc_SM7635.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sltntc/sltntc_SM7635.conf \
     vendor/nothing/asteroids/proprietary/system_ext/framework/androidx.camera.extensions.impl.advanced.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/androidx.camera.extensions.impl.advanced.jar \
@@ -605,7 +596,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/asteroids/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     com.qti.eeprom.arcanine_back_imx882_eeprom \
     com.qti.eeprom.arcanine_back_s5kjn5_eeprom \
@@ -1321,30 +1311,8 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libmlawbpostproc_dsp_skel_so \
     vendor_lib_rfsa_adsp_libtfadsp_rx_so \
     vendor_lib_rfsa_adsp_libtfadsp_tx_so \
-    com.qualcomm.qti.dpm.api@1.0 \
-    libdiag_system \
-    libdiagatbparser_system \
-    libdpmctmgr \
-    libdpmfdmgr \
-    libdpmframework \
-    libdpmtcm \
     libencoderjpeg_jni \
     libntf \
-    libqcc \
-    libqcc_file_agent_sys \
-    libqccdme \
-    libqccfileservice \
-    vendor.qti.diaghal@1.0 \
-    vendor.qti.hardware.dpmaidlservice-V1-ndk \
-    vendor.qti.hardware.dpmservice@1.0 \
-    vendor.qti.hardware.qccsyshal@1.0 \
-    vendor.qti.hardware.qccsyshal@1.1 \
-    vendor.qti.hardware.qccsyshal@1.2-halimpl \
-    vendor.qti.hardware.qccsyshal@1.2 \
-    vendor.qti.hardware.qccvndhal@1.0 \
-    vendor.qti.qccsyshal_aidl-V1-ndk \
-    vendor.qti.qccsyshal_aidl-halimpl \
-    vendor.qti.qccvndhal_aidl-V1-ndk \
     com.google.android.widevine.nonupdatable \
     CACertService \
     CneApp \
@@ -1363,13 +1331,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     WfcActivation \
-    QCC \
     MyVerizonServices \
-    dpmserviceapp \
     nt-telephony-interface \
     com.android.hotwordenrollment.common.util_WIDEBAND \
-    com.qti.dpmframework \
-    dpmapi \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.radio.config.xml \
@@ -1420,7 +1384,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.ims.factoryaidlservice.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
-    vendor.qti.qccsyshal_aidl-service.xml \
     ATFWD-daemon \
     adpl \
     adsprpcd \
@@ -1518,11 +1481,7 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice \
     xtra-daemon \
     xtwifi-client \
-    dpmd \
-    qccsyshal@1.2-service \
-    qccsyshal_aidl-service \
-    sltntc \
-    tcmd
+    sltntc
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_qcrilmsgtunnel_lib_arm64_libntf_so \
