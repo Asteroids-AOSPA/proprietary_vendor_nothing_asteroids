@@ -25055,14 +25055,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.kernel.post_boot-memory",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/init.kernel.post_boot-memory.sh",
-    filename: "init.kernel.post_boot-memory.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.kernel.post_boot-volcano",
     owner: "nothing",
     src: "proprietary/vendor/bin/init.kernel.post_boot-volcano.sh",
@@ -25143,14 +25135,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.kernel",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/init.qti.kernel.sh",
-    filename: "init.qti.kernel.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qti.media",
     owner: "nothing",
     src: "proprietary/vendor/bin/init.qti.media.sh",
@@ -25163,14 +25147,6 @@ sh_binary {
     owner: "nothing",
     src: "proprietary/vendor/bin/init.qti.qcv.sh",
     filename: "init.qti.qcv.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qti.write",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/init.qti.write.sh",
-    filename: "init.qti.write.sh",
     soc_specific: true,
 }
 
@@ -26372,14 +26348,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "vendor_modprobe",
-    owner: "nothing",
-    src: "proprietary/vendor/bin/vendor_modprobe.sh",
-    filename: "vendor_modprobe.sh",
     soc_specific: true,
 }
 

@@ -1420,7 +1420,6 @@ PRODUCT_PACKAGES += \
     ims_rtp_daemon \
     imsdaemon \
     init.kernel.early_boot-memory \
-    init.kernel.post_boot-memory \
     init.kernel.post_boot-volcano \
     init.kernel.post_boot-volcano_2_2_1 \
     init.kernel.post_boot-volcano_3_2_1 \
@@ -1431,10 +1430,8 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot \
     init.qcom.sensors \
     init.qti.graphics \
-    init.qti.kernel \
     init.qti.media \
     init.qti.qcv \
-    init.qti.write \
     ipacm-diag \
     irsc_util \
     loadalgo \
@@ -1474,7 +1471,6 @@ PRODUCT_PACKAGES += \
     time_daemon \
     trusteduilistener \
     vendor.dpmd \
-    vendor_modprobe \
     wfdhdcphalservice \
     wfdvndservice \
     wifidisplayhalservice \
