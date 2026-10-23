@@ -7,6 +7,7 @@ soong_namespace {
         "device/nothing/asteroids",
         "vendor/qcom/common/vendor/adreno/u",
         "vendor/qcom/common/vendor/perf",
+        "vendor/qcom/common/vendor/wlan",
     ],
 }
 
@@ -10584,7 +10585,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk_vendor",
                 "vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk_vendor",
                 "vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk_vendor",
-                "libwpa_client",
                 "libc++",
                 "libc",
                 "libm",
@@ -24009,38 +24009,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "cnss-daemon",
-    owner: "nothing",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/cnss-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libnl",
-                "libcld80211",
-                "libperipheral_client",
-                "libmdmdetect",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "diag-router",
     owner: "nothing",
     target: {
@@ -25307,7 +25275,6 @@ cc_prebuilt_binary {
                 "libloc_mq_client",
                 "liblog",
                 "libnl",
-                "libwpa_client",
                 "liblowi_common",
                 "libqmi_cci",
                 "libqmi_common_so",
@@ -25717,7 +25684,6 @@ cc_prebuilt_binary {
                 "libidl",
                 "libandroid_net",
                 "libhidlbase",
-                "libwpa_client",
                 "libbinder",
                 "libbinder_ndk",
                 "libjsoncpp",
