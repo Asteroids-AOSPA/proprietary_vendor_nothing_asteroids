@@ -3,13 +3,6 @@
 //
 
 soong_namespace {
-    imports: [
-        "hardware/qcom/display",
-        "vendor/qcom/opensource/commonsys/display",
-        "vendor/qcom/opensource/commonsys-intf/display",
-        "vendor/qcom/opensource/dataservices",
-        "vendor/qcom/opensource/audio-hal/primary-hal",
-    ],
 }
 
 cc_prebuilt_library_shared {
