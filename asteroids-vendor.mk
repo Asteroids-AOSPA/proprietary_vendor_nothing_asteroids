@@ -1359,7 +1359,6 @@ PRODUCT_PACKAGES += \
     mwqem-saidl.xml \
     qcrilhook-saidl.xml \
     qms-saidl.xml \
-    qspa-nav.xml \
     qtiradio-saidl.xml \
     vendor.noth.hardware.charge-service.xml \
     vendor.noth.hardware.sensor.sensor_extension-service.xml \
