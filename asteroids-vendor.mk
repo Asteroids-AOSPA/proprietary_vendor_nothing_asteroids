@@ -1423,7 +1423,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-volcano_default_4_3_1 \
     init.qcom.sensors \
     init.qti.graphics \
-    init.qti.media \
     init.qti.qcv \
     ipacm-diag \
     irsc_util \
