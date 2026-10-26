@@ -954,6 +954,7 @@ PRODUCT_PACKAGES += \
     libloc_ril_client \
     libloc_socket \
     libloc_util \
+    liblocation_api_msg \
     liblocation_client_api \
     liblocation_integration_api \
     liblocationservice \

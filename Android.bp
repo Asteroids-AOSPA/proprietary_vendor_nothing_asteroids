@@ -4,6 +4,7 @@
 
 soong_namespace {
     imports: [
+        "device/nothing/asteroids",
         "vendor/qcom/common/vendor/adreno/u",
         "vendor/qcom/common/vendor/perf",
         "vendor/qcom/common/vendor/wlan",
@@ -7710,7 +7711,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "vendor.qti.hardware.fm@1.0_vendor",
+                "vendor.qti.hardware.fm@1.0",
                 "android.hardware.bluetooth@1.0-impl-qti",
                 "libqmi_cci",
                 "libqmiservices",
@@ -12644,6 +12645,33 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libgps.utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblocation_api_msg",
+    owner: "nothing",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblocation_api_msg.so",
+            ],
+            shared_libs: [
+                "libgps.utils",
+                "liblog",
+                "libprotobuf-cpp-lite-21.7",
                 "libc++",
                 "libc",
                 "libm",
@@ -24387,7 +24415,7 @@ cc_prebuilt_binary {
                 "android.hardware.bluetooth@1.1-impl-qti",
                 "vendor.qti.hardware.bttpi-V3-ndk",
                 "libsoc_helper",
-                "vendor.qti.hardware.fm@1.0_vendor",
+                "vendor.qti.hardware.fm@1.0",
                 "com.dsi.ant@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.1",
