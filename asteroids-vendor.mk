@@ -940,7 +940,6 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libjpege \
-    libkeymaster_messages \
     libkeymasterdeviceutils \
     libkeymasterutils \
     liblbs_core \
